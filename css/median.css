@@ -1,0 +1,37 @@
+h1, h2, h3, h4 {
+	font-family: 'Libre Baskerville', serif;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	color: #252839;
+}
+
+a:visited {
+	color: #252839;
+}
+
+header {
+	display: flex;
+	align-items: baseline;
+}
+
+#block-search-form {
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+#colorbar {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6ed3cf+0,3fb0ac+36,22264b+100 */
+	background: #6ed3cf; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #6ed3cf 0%, #3fb0ac 36%, #22264b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #6ed3cf 0%,#3fb0ac 36%,#22264b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #6ed3cf 0%,#3fb0ac 36%,#22264b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ed3cf', endColorstr='#22264b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	min-height: 4px;
+}
