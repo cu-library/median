@@ -99,36 +99,40 @@
 
     <header<?php print $header_attributes; ?>>
 
-      <?php if ($site_logo || $site_name || $site_slogan): ?>
-        <!-- !Branding -->
-        <div<?php print $branding_attributes; ?>>
+      <div id="header-flex-wrapper">
 
-          <?php if ($site_logo): ?>
-            <div id="logo">
-              <?php print $site_logo; ?>
-            </div>
-          <?php endif; ?>
+        <?php if ($site_logo || $site_name || $site_slogan): ?>
+          <!-- !Branding -->
+          <div<?php print $branding_attributes; ?>>
+  
+            <?php if ($site_logo): ?>
+              <div id="logo">
+                <?php print $site_logo; ?>
+              </div>
+            <?php endif; ?>
+  
+            <?php if ($site_name || $site_slogan): ?>
+              <!-- !Site name and Slogan -->
+              <div<?php print $hgroup_attributes; ?>>
+  
+                <?php if ($site_name): ?>
+                  <h1<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
+                <?php endif; ?>
+  
+                <?php if ($site_slogan): ?>
+                  <h2<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
+                <?php endif; ?>
+  
+              </div>
+            <?php endif; ?>
+  
+          </div>
+        <?php endif; ?>
+  
+        <!-- !Header Region -->
+        <?php print render($page['header']); ?>
 
-          <?php if ($site_name || $site_slogan): ?>
-            <!-- !Site name and Slogan -->
-            <div<?php print $hgroup_attributes; ?>>
-
-              <?php if ($site_name): ?>
-                <h1<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
-              <?php endif; ?>
-
-              <?php if ($site_slogan): ?>
-                <h2<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
-              <?php endif; ?>
-
-            </div>
-          <?php endif; ?>
-
-        </div>
-      <?php endif; ?>
-
-      <!-- !Header Region -->
-      <?php print render($page['header']); ?>
+      </div>
 
     </header>
 
@@ -147,8 +151,6 @@
     <!-- !Secondary Content Region -->
     <?php print render($page['secondary_content']); ?>
 
-    <div id="colorbar"></div>
-
     <div id="columns" class="columns clearfix">
       <main id="content-column" class="content-column" role="main">
         <div class="content-inner">
@@ -164,7 +166,7 @@
             <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
               <header<?php print $content_header_attributes; ?>>
 
-                <?php if ($title): ?>
+                <?php if ($title && !drupal_is_front_page()): ?>
                   <h1 id="page-title">
                     <?php print $title; ?>
                   </h1>
@@ -219,6 +221,8 @@
 
     <!-- !Tertiary Content Region -->
     <?php print render($page['tertiary_content']); ?>
+
+    <div id="colorbar"></div>
 
     <!-- !Footer -->
     <?php if ($page['footer'] || $attribution): ?>

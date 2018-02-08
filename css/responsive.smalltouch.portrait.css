@@ -7,11 +7,8 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
-/* Increase the default font size on small touch devices */
-/* line 16, ../sass/responsive.smalltouch.portrait.scss */
-body {
-  font-size: 100%;
-}
+
+
 
 /* =============================================================================
  *   Mobile Menu Toggle

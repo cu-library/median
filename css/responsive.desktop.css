@@ -8,4 +8,13 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
+#header {
+	min-height: 250px;
+}
+
+#header-flex-wrapper {
+	align-items: baseline;
+	justify-content: space-between;
+}
+
 /*# sourceMappingURL=responsive.desktop.css.map */

@@ -6,6 +6,7 @@ h1, h2, h3, h4 {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	background-color: #e6e6e6;
 }
 
 a {
@@ -15,15 +16,43 @@ a {
 a:visited {
 	color: #252839;
 }
+ 
+#header {
+	display: flex;
+	align-items: flex-end;
+	background: no-repeat center center url('images/banner-color.png');
+	color: white;
+	min-height: 100px;
+}
 
-header {
+#header-flex-wrapper {
+	width: 100%;
 	display: flex;
 	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#header h1 {
+	font-size: 4rem;
+	margin-left: 1rem;
+}
+
+#header a, #header a:visited {
+	color: white;
+}
+
+#header a:hover, #header a:focus {
+	text-decoration: none;
+}
+
+#header.clearfix:after{
+	display: none;
 }
 
 #block-search-form {
 	padding-bottom: 5px;
-	margin-bottom: 0px;
+	margin: 0.5rem 1rem;
 }
 
 #colorbar {
@@ -34,4 +63,5 @@ header {
 	background: linear-gradient(135deg, #6ed3cf 0%,#3fb0ac 36%,#22264b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ed3cf', endColorstr='#22264b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	min-height: 4px;
+	margin-bottom: 1rem;
 }

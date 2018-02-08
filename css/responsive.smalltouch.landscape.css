@@ -9,9 +9,7 @@
  */
 /* Increase the body font size on small touch devices */
 /* line 16, ../sass/responsive.smalltouch.landscape.scss */
-body {
-  font-size: 100%;
-}
+
 
 /* =============================================================================
  *   Mobile Menu Toggle

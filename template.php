@@ -28,8 +28,7 @@
 function median_preprocess_html(&$vars) {
   global $theme_key;
 
-   drupal_add_css('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto', array('type' => 'external'));
-
+  drupal_add_css('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto', array('type' => 'external'));
 }
 
 /**
