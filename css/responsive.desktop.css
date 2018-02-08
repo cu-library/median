@@ -12,9 +12,22 @@
 	min-height: 250px;
 }
 
+#header h1 {
+	font-size: 5rem;
+}
+
 #header-flex-wrapper {
 	align-items: baseline;
 	justify-content: space-between;
 }
+
+#main-content {
+	margin: 0px;
+}
+
+div.field-name-field-pull-quote {
+	font-size: 250%;
+}
+
 
 /*# sourceMappingURL=responsive.desktop.css.map */
