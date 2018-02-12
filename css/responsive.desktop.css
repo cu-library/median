@@ -8,26 +8,35 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
-#header {
-	min-height: 250px;
+#header h1 {
+	font-size: 3.5rem;
 }
 
-#header h1 {
-	font-size: 5rem;
+h2, h2.node-title, #page-title, .node h2.node-title {
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	font-size: 160%;
+}
+
+#header {
+	min-height: 240px;
 }
 
 #header-flex-wrapper {
+	width: 100%;
+	display: flex;
 	align-items: baseline;
+	flex-wrap: wrap;
 	justify-content: space-between;
-}
-
-#main-content {
-	margin: 0px;
+	padding: 0px 1rem;
 }
 
 div.field-name-field-pull-quote {
 	font-size: 250%;
 }
 
+#main-content {
+	margin: 0px;
+}
 
 /*# sourceMappingURL=responsive.desktop.css.map */

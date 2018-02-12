@@ -4,12 +4,6 @@ h1 {
 	margin-bottom: 0.5rem;
 }
 
-h2, h2.node-title, #page-title, .node h2.node-title {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	font-size: 160%;
-}
-
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #e6e6e6;
@@ -28,24 +22,18 @@ a:visited {
 	align-items: flex-end;
 	background: no-repeat center center url('images/banner-color.png');
 	color: white;
-	min-height: 100px;
 }
 
 #header-wrapper {
 	background-color: #000005;
 }
 
-#header-flex-wrapper {
-	width: 100%;
-	display: flex;
-	align-items: baseline;
-	flex-wrap: wrap;
-	justify-content: center;
+#columns {
+	padding: 0px 1rem;
 }
 
 #header h1 {
 	font-size: 3rem;
-	margin-left: 1rem;
 }
 
 #header a, #header a:visited {
@@ -62,7 +50,15 @@ a:visited {
 
 #block-search-form {
 	padding-bottom: 5px;
-	margin: 0.5rem 1rem;
+	margin: 0px;
+}
+
+#block-search-form > div {
+	margin-right: 0px;
+}
+
+.branding-elements {
+	margin: 0px;
 }
 
 div.field-name-field-interview-summary {
@@ -109,4 +105,11 @@ div.field-name-field-pull-quote div.field-item {
 
 .search-info {
 	display: none;
+}
+
+.view-interviews .view-header {
+	background: #007171;
+	font-family: 'Libre Baskerville', serif;
+	padding: 20px 20px 5px 20px;
+	color: #e6e6e6;
 }

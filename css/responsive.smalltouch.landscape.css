@@ -7,8 +7,36 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
-/* Increase the body font size on small touch devices */
-/* line 16, ../sass/responsive.smalltouch.landscape.scss */
+
+#header h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2, h2.node-title, #page-title, .node h2.node-title {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 160%;
+}
+
+#header-flex-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0px 1rem;
+}
+
+#block-system-main > div > div.view-header {
+	padding-top: 10px;
+}
+
+#block-system-main > div > div.view-header > div > p {
+	margin-bottom: 5px;
+	font-size: 95%;
+}
+
 
 
 /* =============================================================================

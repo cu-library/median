@@ -240,7 +240,6 @@
 
           <?php print render($page['content_aside']); ?>
 
-          <div id="colorbar"></div>
 
         </div></div>
 
@@ -257,6 +256,8 @@
         </div>
       </div>
     <?php endif; ?>
+
+    <div id="colorbar"></div>
 
     <?php if ($page['footer'] || $attribution): ?>
       <div id="footer-wrapper">
