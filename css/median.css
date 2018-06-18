@@ -127,4 +127,27 @@ div.sf-accordion-toggle a {
 	margin-bottom: 2rem;
 }
 
+.paragraphs-item-full-width-image, .paragraphs-item-text-with-right-image, .paragraphs-item-text-with-left-image {
+        margin-bottom: 20px;
+        padding: 5px;
+        background: lightgrey;
+}
 
+.paragraphs-item-text-with-left-image figure, .paragraphs-item-text-with-right-image figure {
+	display: flex;
+ 	justify-content: center;
+	align-items: center;
+}
+
+.field-name-field-image-caption {
+	font-size: 90%;
+	padding: 20px 10px 10px 10px;
+}
+
+.field-name-field-image-caption p {
+	margin: 0px;
+}
+
+.paragraphs-item-regular-text p {
+	font-size: 120%;
+}

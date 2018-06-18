@@ -30,4 +30,17 @@ h2, h2.node-title, #page-title, .node h2.node-title {
 	justify-content: space-between;
 	padding: 0px 1rem;
 }
+
+.paragraphs-item-text-with-left-image {
+        float: left;
+        margin-right: 20px;
+        max-width: 50%;
+}
+
+.paragraphs-item-text-with-right-image {
+        float: right;
+        margin-left: 20px;
+        max-width: 50%;
+}
+
 /*# sourceMappingURL=responsive.tablet.landscape.css.map */

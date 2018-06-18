@@ -39,4 +39,17 @@ div.field-name-field-pull-quote {
 	margin: 0px;
 }
 
+.paragraphs-item-text-with-left-image {
+	float: left;
+	margin-right: 20px;
+	max-width: 50%;
+}
+
+.paragraphs-item-text-with-right-image {
+        float: right;
+        margin-left: 20px;
+        max-width: 50%;
+}
+
+
 /*# sourceMappingURL=responsive.desktop.css.map */
